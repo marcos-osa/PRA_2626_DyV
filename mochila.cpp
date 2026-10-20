@@ -3,7 +3,7 @@
 
 int mochila(const std::vector<int> &p, const std::vector<int> &b, int m, const std::vector<int> &s)
 {
-	const int n = p.size()
+	const int n = p.size();
 	
 	s.assign(n, 0);
 	
@@ -11,7 +11,7 @@ int mochila(const std::vector<int> &p, const std::vector<int> &b, int m, const s
 	
 	for (int i = 1; i <= n; i++)
 	{
-		for (int j = 1; i <= m; j++)
+		for (int j = 1; j <= m; j++)
 		{
 			if (p[i - 1] > j)
 				T[i][j] = T[i -1][j];
